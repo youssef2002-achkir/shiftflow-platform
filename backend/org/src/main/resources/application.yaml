@@ -1,3 +1,13 @@
+server:
+  port: 8080
 spring:
   application:
-    name: org
+    name: shiftFlow-platform
+
+logging:
+  level:
+    com:
+      shiftFlow: DEBUG
+  pattern:
+    console: d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+
