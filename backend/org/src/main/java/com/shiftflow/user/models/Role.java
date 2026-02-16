@@ -1,8 +1,8 @@
-package com.shiftFlow.org.user.models;
+package com.shiftflow.user.models;
 
 
-import com.shiftFlow.org.user.BaseEntity;
-import com.shiftFlow.org.user.enums.Permission;
+import com.shiftflow.user.BaseEntity;
+import com.shiftflow.user.enums.Permission;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

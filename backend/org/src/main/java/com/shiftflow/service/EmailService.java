@@ -1,4 +1,4 @@
-package com.shiftFlow.org.service;
+package com.shiftflow.service;
 
 import org.springframework.stereotype.Service;
 
