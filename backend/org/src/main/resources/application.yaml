@@ -1,13 +1,25 @@
 server:
   port: 8080
+
 spring:
   application:
-    name: shiftFlow-platform
-
+    name: shiftflow-platform  # ← lowercase for consistency
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shift_flow_db
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
 logging:
   level:
-    com:
-      shiftFlow: DEBUG
+    com.shiftflow: DEBUG
   pattern:
-    console: d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+    console: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n'
 

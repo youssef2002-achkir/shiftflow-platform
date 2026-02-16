@@ -1,4 +1,4 @@
-package com.shiftFlow.org.user;
+package com.shiftflow.user;
 
 
 import jakarta.persistence.*;

@@ -1,6 +1,6 @@
-package com.shiftFlow.org.service.implementation;
+package com.shiftflow.service.implementation;
 
-import com.shiftFlow.org.service.EmailService;
+import com.shiftflow.service.EmailService;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package com.shiftFlow.org.user.enums;
+package com.shiftflow.user.enums;
 
 import java.util.*;
 

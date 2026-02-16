@@ -1,7 +1,7 @@
-package com.shiftFlow.org.user.models;
+package com.shiftflow.user.models;
 
-import com.shiftFlow.org.user.BaseEntity;
-import com.shiftFlow.org.user.enums.Civility;
+import com.shiftflow.user.BaseEntity;
+import com.shiftflow.user.enums.Civility;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +22,7 @@ public class User extends BaseEntity {
     private String firstName;
     private String lastName;
     private String email;
+    private String password;
     private String PhoneNumber;
     private String Address;
     private String birthPlace;
