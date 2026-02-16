@@ -16,7 +16,9 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "users")
+@Table(name = "users",indexes = {
+        @Index(name = "idx_users_email", columnList = "email")
+})
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User extends BaseEntity {
     private String firstName;
